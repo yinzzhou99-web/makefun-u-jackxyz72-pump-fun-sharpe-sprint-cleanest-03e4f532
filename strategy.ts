@@ -27,7 +27,7 @@
 import type { Batch, Bot, BotState, OrderInput, Pubkey } from './vendor/makefun-bot.ts';
 
 const LAMPORTS_PER_SOL = 1_000_000_000;
-const MAIN_TICKET_LAMPORTS = 40_000_000; // 0.04 SOL per main ticket
+const MAIN_TICKET_LAMPORTS = 60_000_000; // 0.06 SOL per main ticket
 const FILLER_TICKET_LAMPORTS = 11_000_000; // 0.011 SOL per filler ticket
 const MIN_TICKET_LAMPORTS = 10_500_000; // just above the 0.01 SOL round-trip floor
 const MAX_OPEN = 5;
@@ -40,7 +40,7 @@ const MAX_TAPE = 12; // only the first trades matter for the entry filter
 
 const STOP_AT = 0.92; // sell when mark value falls to 92% of cost
 const TRAIL_ARM_AT = 1.15; // trailing stop arms once value reaches 115% of cost
-const TRAIL_BACK = 0.95; // sell on a 5% pullback from the peak value
+const TRAIL_BACK = 0.98; // sell on a 2% pullback from the peak value
 const MAX_HOLD_SLOTS = 1200;
 const BUY_SLIPPAGE_BPS = 500;
 const SELL_SLIPPAGE_BPS = 10000;

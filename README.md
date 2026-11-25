@@ -20,13 +20,13 @@ Small uniform tickets keep every hourly return smooth — exactly what
 hourly Sharpe rewards.
 
 - **Entry:** on the 6th trade, or the 10th if undecided: main ticket
-  (0.04 SOL) when the largest early buyer took under 25% of the early buy
+  (0.06 SOL) when the largest early buyer took under 25% of the early buy
   SOL; a small filler ticket (0.011 SOL) when the share is 25–30% (breadth
   for the 20-coin guardrail, at tiny size).
 - **Size:** clipped to 80% of the 1%-of-real-reserve cap, never below
   0.0105 SOL (above the 0.01 SOL round-trip floor).
 - **Exit:** stop at 92% of cost; trailing stop once value reaches 115% of
-  cost (sell on a 5% pullback from the peak); or after 1200 slots held.
+  cost (sell on a 2% pullback from the peak); or after 1200 slots held.
 - **Limits:** one ticket per coin, at most 5 open positions, never more than
   free cash allows. Fully deterministic — no clock, no randomness.
 
